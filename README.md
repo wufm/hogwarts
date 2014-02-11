@@ -2,8 +2,6 @@
 
 Hogwarts has lost all its magic and now NOTHING WORKS!  This app is riddled with student errors…
 
----
-
 ### First
 Correct all the errors so that this school management app runs properly.
 
@@ -11,8 +9,6 @@ Correct all the errors so that this school management app runs properly.
 1. Implement a method that randomly assigns new students to one of Hogwarts' four houses.  Each student needs to be assigned automatically when they are added to the school records.
 2. Add the ability to reassign a student to another house if we need to mix things up a bit.
 3. If we really need to mix it all around, we would need to randomly reassign all students to one of the four houses (a student cannot be reassigned to the same house, and the number of students in each house should not vary more than 10%).
-
----
 
 ## Instructions:
 
