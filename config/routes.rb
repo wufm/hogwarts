@@ -1,4 +1,4 @@
-Hogwarts::Application.routes.draw do
+Rails.application.routes.draw do
   route to: 'welcome/index'
 
   get '/houses' => 'houses#List'
