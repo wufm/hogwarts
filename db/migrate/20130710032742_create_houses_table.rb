@@ -1,8 +1,7 @@
 class CreateHousesTable < ActiveRecord::Migration
   def up
-    create_table :house do
+    create_table :houses  do |t|
       t.string :name
-      t.references :students
     end
   end
 
