@@ -1,7 +1,17 @@
 <h1>Houses</h1>
-<ul>
-<% @houses.each do |h| %>
-  <li><a href="<%= url_for h %>"><%= h.name %></a></li>
-<% end %>
-</ul>
+<table>
+  <thead>
+    <th>House</th>
+    <th>Count</th>
+  </thead>
+  <tbody>
+  <% @houses.each do |h| %>
+    <tr>
+
+      <td><a href="<%= url_for h%>"><%= h.name %></a></td>
+      <td><%=h.students.count %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
   <p><%= link_to "Conjure new House", new_house_path%></p>

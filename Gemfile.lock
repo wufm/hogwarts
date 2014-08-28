@@ -38,6 +38,8 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    faker (1.2.0)
+      i18n (~> 0.5)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -56,6 +58,7 @@ GEM
     minitest (5.3.3)
     multi_json (1.10.0)
     polyglot (0.3.4)
+    psych (2.0.5)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -120,9 +123,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  faker
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  psych
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

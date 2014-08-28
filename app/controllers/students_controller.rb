@@ -33,6 +33,10 @@ class StudentsController < ApplicationController
     redirect_to action: 'index'
   end
 
+  def scramble
+    Student.scramble_all
+    redirect_to action: 'index'
+  end
 
   private
   def student_params

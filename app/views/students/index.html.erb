@@ -1,4 +1,19 @@
 <h1>Here are the students</h1>
-<% @students.each do |student| %>
-<li><a href="<%= url_for student%>"><%= student.name %></a></li>
-<% end %>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>House</th>
+  </thead>
+  <tbody>
+  <% @students.each do |student| %>
+    <tr>
+
+      <td><a href="<%= url_for student%>"><%= student.name %></a></td>
+      <td><%=student.house.name%></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<p><%= link_to "Scramble Student Housing", students_scramble_path%></p>
+
+

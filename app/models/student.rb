@@ -9,4 +9,13 @@ class Student < ActiveRecord::Base
       self.house = house
   end
 
+  def self.scramble_all
+    Student.all.each do |s|
+      old_house = s.house
+      until old_house != s.house do
+        s.set_random_house
+      end
+      s.save
+    end
+  end
 end
