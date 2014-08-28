@@ -1,0 +1,4 @@
+<h1>Here are the students</h1>
+<% @students.each do |student| %>
+<li><a href="<%= url_for student%>"><%= student.name %></a></li>
+<% end %>

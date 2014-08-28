@@ -1,3 +1,7 @@
-<%= @houses.each do |h| %>
-  <a href="/houses/<%= house.id %>"><%= house.name %></a>
+<h1>Houses</h1>
+<ul>
+<% @houses.each do |h| %>
+  <li><a href="<%= url_for h %>"><%= h.name %></a></li>
 <% end %>
+</ul>
+  <p><%= link_to "Conjure new House", new_house_path%></p>

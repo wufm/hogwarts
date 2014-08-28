@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  route to: 'welcome/index'
 
-  get '/houses' => 'houses#List'
-  get '/students' => 'students#index'
-  get '/students' => 'students#creat'
+  root :to => 'welcome#index'
+
+  resources :students
+  resources :houses
+
 end

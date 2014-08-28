@@ -1,0 +1,17 @@
+= form_for @student do |f|
+  - if @student.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@student.errors.count, "error")} prohibited this person from being saved:"
+      %ul
+        - @student.errors.full_messages.each do |msg|
+          %li= msg
+  %br/
+  =f.label "Student Name"
+  =f.text_field :name
+  %br/
+  - if @edit_house
+    =f.label "Set House"
+    =f.collection_select(:house_id, House.all, :id, :name)
+
+  %br/
+  =f.submit "Conjure Student"

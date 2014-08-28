@@ -14,12 +14,16 @@
 ActiveRecord::Schema.define(version: 20130710032742) do
 
   create_table "houses", force: true do |t|
-    t.string "name"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "students", force: true do |t|
-    t.string  "name"
-    t.integer "house_id"
+    t.string   "name"
+    t.integer  "house_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

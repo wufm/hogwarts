@@ -1,6 +1,9 @@
-<% @house.name %>
+<h1><%= @house.name %></h1>
+<p>Students:</p>
 <ul>
-<% @house.students.each |student| %>
-  <li><%= student.name %></li></li>
+  <% @house.students.each do |student|  %>
+  <li><%= student.name %></li>
+
+  <% end %>
 </ul>
-<% end %>
+<%= link_to "Edit", edit_house_path %>

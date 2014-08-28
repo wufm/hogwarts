@@ -3,6 +3,8 @@ class CreateStudentsTable < ActiveRecord::Migration
     create_table :students do |t|
       t.string :name
       t.integer :house_id
+
+      t.timestamps
     end
   end
 
